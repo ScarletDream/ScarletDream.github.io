@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		The first step - How to Set Up a Personal Blog | 
+	 
+	DrunkDream land
+	</title>
+	
+	<!-- keywords,description -->
+	
+		<meta name="keywords" content="DrunkDream" />
+	
+	
+		<meta name="description" content="DrunkDream" />
+	
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/cute_soul.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "localhost:4000";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.5.1/dist/Valine.min.js"></script>
+
+	
+	
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">DrunkDream land</a>
+
+	<ul id="menu">
+    
+
+    
+
+    
+
+    
+  
+    
+      <li class="menu-item">
+        <a href='https://github.com/ScarletDream' class="menu-item-link" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </li>
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="Press Enter to search">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file active">
+									<a href="/2024/11/29/The_first_step/">
+                     
+										    The first step - How to Set Up a Personal Blog
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/11/30/test/">
+                     
+										    test
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content" class="content">
+		<h1 id="article-title">
+	The first step - How to Set Up a Personal Blog
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+
+	<span>DrunkDream</span>
+	<span>2024-11-29 10:56:13</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<p>The purpose of this article is to record my method of building a personal blog. <strong>And the problems encountered  will be summarized in the last part.</strong></p>
+<h2 id="Ⅰ-Environmental-Preparation"><a href="#Ⅰ-Environmental-Preparation" class="headerlink" title="Ⅰ Environmental Preparation"></a>Ⅰ Environmental Preparation</h2><p><em><strong>Strongly recommend creating a new folder, and all following operations and commands should be performed within this folder. This can save a lot of trouble.</strong></em></p>
+<h3 id="①-Install-Git"><a href="#①-Install-Git" class="headerlink" title="① Install Git"></a>① Install Git</h3><h4 id="1-Visit-the-official-website"><a href="#1-Visit-the-official-website" class="headerlink" title="1. Visit the official website"></a>1. Visit the official website</h4><p>Go to <a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a>, follow the prompts to install.</p>
+<p>After installation, a prompt for Git Bash Here will appear when you right-click, and clicking on it allows you to run git commands in the current directory.</p>
+<h4 id="2-Run-your-Git-terminal"><a href="#2-Run-your-Git-terminal" class="headerlink" title="2. Run your Git terminal"></a>2. Run your Git terminal</h4><p>Use Git Bash Here to open the terminal anywhere.</p>
+<h4 id="3-Check-your-Git-version"><a href="#3-Check-your-Git-version" class="headerlink" title="3. Check your Git version"></a>3. Check your Git version</h4><p>Enter check command: </p>
+<ul>
+<li><strong>git –version</strong></li>
+</ul>
+<p>something similar to the following appears to indicate success:</p>
+<p><img src="/2024/11/29/The_first_step/gitVersion.png" alt="Git version"></p>
+<h3 id="②-Install-nodejs"><a href="#②-Install-nodejs" class="headerlink" title="② Install nodejs"></a>② Install nodejs</h3><h4 id="1-Visit-the-official-website-1"><a href="#1-Visit-the-official-website-1" class="headerlink" title="1. Visit the official website"></a>1. Visit the official website</h4><p>Enter the official website: <a target="_blank" rel="noopener" href="https://www.nodejs.com.cn/download.html">https://www.nodejs.com.cn/download.html</a> (Or the fastest website in your area), download according to your needs.</p>
+<h4 id="2-Check-your-installation"><a href="#2-Check-your-installation" class="headerlink" title="2. Check your installation"></a>2. Check your installation</h4><p>Enter the following command to check if the installation was successful:</p>
+<ul>
+<li><strong>node -v</strong></li>
+<li><strong>npm -v</strong></li>
+</ul>
+<p>Just like:</p>
+<p><img src="/2024/11/29/The_first_step/nodeVersion.png" alt="Node version"></p>
+<h4 id="3-Create-cache-and-global-folders"><a href="#3-Create-cache-and-global-folders" class="headerlink" title="3. Create cache and global folders"></a>3. Create cache and global folders</h4><p>Find the directory just installed, and create two folders under the installation directory: 【node_global】and 【node_cache】.This is necessary configuration for Nodejs.</p>
+<img src="/2024/11/29/The_first_step/create2folders.png" width="60%">
+
+<h4 id="4-Configure-these-two-folders"><a href="#4-Configure-these-two-folders" class="headerlink" title="4. Configure these two folders"></a>4. Configure these two folders</h4><p>Use administrator privileges to open the cmd window, then input the following command:</p>
+<ul>
+<li><strong>npm config set prefix “your_nodejs_diretory\node_global”</strong></li>
+<li><strong>npm config set cache “your_nodejs_diretory\node_cache”</strong></li>
+</ul>
+<h4 id="5-Configure-environment-variables"><a href="#5-Configure-environment-variables" class="headerlink" title="5. Configure environment variables"></a>5. Configure environment variables</h4><p>The process is rather simple but too lengthy, please search it yourself XD.</p>
+<h3 id="③-Install-Hexo"><a href="#③-Install-Hexo" class="headerlink" title="③ Install Hexo"></a>③ Install Hexo</h3><p>Just a few simple steps are required:</p>
+<h4 id="1-Execute-the-installation-in-the-terminal"><a href="#1-Execute-the-installation-in-the-terminal" class="headerlink" title="1. Execute the installation in the terminal"></a>1. Execute the installation in the terminal</h4><p>Enter install command and check：</p>
+<ul>
+<li><strong>npm install hexo -g</strong></li>
+<li><strong>hexo -v</strong></li>
+</ul>
+<p>And you know what you should see.</p>
+<h4 id="2-Installation-Hexo-dependency"><a href="#2-Installation-Hexo-dependency" class="headerlink" title="2. Installation Hexo dependency"></a>2. Installation Hexo dependency</h4><p>Enter the command:</p>
+<ul>
+<li><strong>npm install hexo-deployer-git –save</strong></li>
+</ul>
+<p><em><strong>Pay special attention to the fact that this command needs to be executed in the folder where you write your blog! Otherwise, an error may occur when you upload your blog:</strong></em></p>
+<ul>
+<li><strong>ERROR Deployer not found: git</strong></li>
+</ul>
+<h2 id="Ⅱ-Configure-Your-GitHub-SSH-Key"><a href="#Ⅱ-Configure-Your-GitHub-SSH-Key" class="headerlink" title="Ⅱ Configure Your GitHub SSH Key"></a>Ⅱ Configure Your GitHub SSH Key</h2><p>You should have a github account to synchronize your blog (easy to publish), and the purpose of this step is: you can upload local source code and resources to github confidentially, without having to enter your account number and password every time.</p>
+<h4 id="1-Enter-the-ssh-directory"><a href="#1-Enter-the-ssh-directory" class="headerlink" title="1. Enter the .ssh directory"></a>1. Enter the .ssh directory</h4><p>Execute the cd command to Enter your local SSH folder:</p>
+<ul>
+<li><strong>cd ~&#x2F;.ssh</strong></li>
+</ul>
+<h4 id="2-Generate-SSH-Key"><a href="#2-Generate-SSH-Key" class="headerlink" title="2. Generate SSH Key"></a>2. Generate SSH Key</h4><p>Generate SSH Key base on you email address (The one that binds to github):</p>
+<ul>
+<li><strong>ssh-keygen -t rsa -C “your_email_address”</strong></li>
+</ul>
+<p>Wait for a moment, then press the enter key three times consecutively.</p>
+<p>Then, a key id_rsa.pub will appear in your .ssh directory. Execute a command in the .ssh folder:</p>
+<ul>
+<li><strong>clip &lt; id_rsa.pub</strong></li>
+</ul>
+<p>to copy the key content. (Opening the text editor and then copying might cause issues!)</p>
+<h4 id="3-Link-Start"><a href="#3-Link-Start" class="headerlink" title="3. Link Start!"></a>3. Link Start!</h4><p>Open the GitHub homepage, click on personal settings.</p>
+<img src="/2024/11/29/The_first_step/settings.png" width="30%" height="30%">
+
+
+<p>Click on the SSH and GPG keys on the left, then click on New SSH key.</p>
+<img src="/2024/11/29/The_first_step/SSHKEY.png" width="30%" height="30%">
+
+
+<p>Create a title as you wish, then paste your SSH key. And just ADD IT.</p>
+<img src="/2024/11/29/The_first_step/NewSSH.png">
+
+
+<p>Then:</p>
+<img src="/2024/11/29/The_first_step/AddSSH.png" height="80%">
+
+
+<p>Enter the command to test the connection:</p>
+<ul>
+<li><strong>ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a></strong></li>
+</ul>
+<p>If the following prompt appears:</p>
+<p><img src="/2024/11/29/The_first_step/checkLink.png" alt="checkLink"></p>
+<p>then you have succeeded!</p>
+<p>Final step, configure your account and password.</p>
+<ul>
+<li><strong>git config –global user.name “your_github_usrname”</strong></li>
+<li><strong>git config –global user.email “your_github-binding_email_address”</strong></li>
+</ul>
+<h2 id="Ⅲ-Build-Your-Personal-Blog"><a href="#Ⅲ-Build-Your-Personal-Blog" class="headerlink" title="Ⅲ Build Your Personal Blog"></a>Ⅲ Build Your Personal Blog</h2><p>We have finally gotten through those tedious preparation stages (if you managed to stick it out)! Now, please create an empty folder named ‘blog’, Then execute the blog initialization command under this folder:</p>
+<ul>
+<li><strong>hexo init</strong></li>
+</ul>
+<p>And you’ll see sth like this (Perhaps a few less documents than mine):</p>
+<p>![blogInit](.&#x2F;The_first_step&#x2F;blogInit.png &#x3D;700x)</p>
+<p>Now create your first blog!</p>
+<ul>
+<li><strong>hexo n ‘my_first_blog’</strong></li>
+</ul>
+<p>And you will find <strong>my_first_blog.md</strong> in <strong>\source_posts</strong>, just edit it as you like!</p>
+<p>Then generate html document (This command will generate web page from all md files in your source folder):</p>
+<ul>
+<li><strong>hexo -g</strong></li>
+</ul>
+<p>Then start the server:</p>
+<ul>
+<li><strong>hexo -s</strong></li>
+</ul>
+<p>And you will have a webpage running on your local network! Click in! It might look like:</p>
+<img src="/2024/11/29/The_first_step/myWeb.png" width="80%">
+
+<p>Congratulations!</p>
+<p>Haha, you might notice that your web page theme looks different from mine? This is because I have downloaded a different theme. You can go to the Hexo Themes website to download the theme you like! Theme-related configurations are located in the <strong>\themes</strong> folder.</p>
+<h2 id="Ⅳ-Deploy-To-The-GitHub-Remote-Repository"><a href="#Ⅳ-Deploy-To-The-GitHub-Remote-Repository" class="headerlink" title="Ⅳ Deploy To The GitHub Remote Repository"></a>Ⅳ Deploy To The GitHub Remote Repository</h2><p>Firstly, you need to create a new repository:</p>
+<p>Attention! Please use the format <strong>your_name.github.io</strong> for the repository name.</p>
+<img src="/2024/11/29/The_first_step/ReInfo.png" width="60%" height="60%">
+
+<p>Then please edit the deployment part in the <strong>_config.yml</strong> file located in the blog directory.</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:your_name/your_name.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<p>Finally, by executing the command:</p>
+<ul>
+<li><strong>hexo d</strong></li>
+</ul>
+<p>you can synchronize your blog with GitHub!</p>
+<p><strong>We finally succeeded in making it!</strong></p>
+<h2 id="Ⅴ-Problems"><a href="#Ⅴ-Problems" class="headerlink" title="Ⅴ Problems"></a>Ⅴ Problems</h2><hr>
+<h3 id="①-If-there-is-no-Git-Bash-Here-option"><a href="#①-If-there-is-no-Git-Bash-Here-option" class="headerlink" title="① If there is no Git Bash Here option"></a>① If there is no Git Bash Here option</h3><p>First, ‘win + R’ opens the run small window, and enter ‘regedit’ to open the registry.</p>
+<p><img src="/2024/11/29/The_first_step/regedit.png" alt="regedit picture"></p>
+<p>Then, set it in the Registry editor interface:</p>
+<ul>
+<li><strong>HKEY_CLASSES_ROOT\Directory\Background\shell</strong></li>
+</ul>
+<p>And create a new shell folder if there is no shell folder in the Background directory.</p>
+<p>The key points are as follows:</p>
+<p>First, create a new item ‘Git Bush Here’ in the shell directory. At this time, click the right mouse button and the ‘Git Bush Here’ option will appear in the menu.</p>
+<p>Then, create a new command entry under Git Bush Here, and then modify the default value of the command entry to:</p>
+<ul>
+<li><strong>your_git_directory\bash.exe –login -i</strong></li>
+</ul>
+<p>Get it done. At this time, you can use the Git Bash Here shortcut with confidence.</p>
+<p>Extraly, we can add an icon to the shortcut. Create a new string value Icon under Git Bush Here and edit the Icon value:</p>
+<ul>
+<li><strong>your_git_directory\mingw64\share\git\git-for-windows.ico</strong></li>
+</ul>
+<hr>
+<h3 id="②-GitHub-connection-failed-Failed-to-connect-to-github-com-port-443-after-xxx-ms-Couldn’t-connect-to-server"><a href="#②-GitHub-connection-failed-Failed-to-connect-to-github-com-port-443-after-xxx-ms-Couldn’t-connect-to-server" class="headerlink" title="② GitHub connection failed: Failed to connect to github.com port 443 after xxx ms: Couldn’t connect to server"></a>② GitHub connection failed: Failed to connect to github.com port 443 after xxx ms: Couldn’t connect to server</h3><p>When you are in a VPN environment, a GitHub connection failure is often due to inconsistent configurations between the proxy server and Git. This manifests as Git failing to access GitHub through the proxy, or the incorrect proxy port. Here are the steps to address this issue:</p>
+<h4 id="1-Check-the-current-proxy-settings"><a href="#1-Check-the-current-proxy-settings" class="headerlink" title="1. Check the current proxy settings"></a>1. Check the current proxy settings</h4><p>First, verify your system’s proxy settings. Typically, a VPN sets up a local proxy port for network requests. You can check the proxy port through the following steps:</p>
+<p>Open Settings &gt; Network &amp; Internet &gt; Proxy, find the proxy settings, and record the current proxy port. Assume the port number is xxx.</p>
+<h4 id="2-Configure-Git-proxy"><a href="#2-Configure-Git-proxy" class="headerlink" title="2. Configure Git proxy"></a>2. Configure Git proxy</h4><p>Ensure that Git uses the same port as the system proxy settings. This can be configured with the following command:</p>
+<ul>
+<li><strong>git config –global http.proxy <a href="http://127.0.0.1:xxx">http://127.0.0.1:xxx</a></strong></li>
+<li><strong>git config –global http.proxy <a href="https://127.0.0.1:xxx">https://127.0.0.1:xxx</a></strong></li>
+</ul>
+<p>Thus, Git will access GitHub through this proxy (including HTTP and HTTPS protocols).</p>
+<h4 id="3-Verify-if-the-proxy-settings-have-taken-effect"><a href="#3-Verify-if-the-proxy-settings-have-taken-effect" class="headerlink" title="3. Verify if the proxy settings have taken effect"></a>3. Verify if the proxy settings have taken effect</h4><p>After configuration, you can use the following command to verify if the proxy settings are correct:</p>
+<ul>
+<li><strong>git config –global -l</strong></li>
+</ul>
+<p>This will list the current Git configuration information, ensuring that the http.proxy and https.proxy settings within it are set to the port you just configured.</p>
+<h4 id="4-Refresh-the-DNS-cache"><a href="#4-Refresh-the-DNS-cache" class="headerlink" title="4.  Refresh the DNS cache"></a>4.  Refresh the DNS cache</h4><p>Sometimes DNS caching can lead to connection issues. It is recommended to flush the system’s DNS cache before performing Git operations:</p>
+<ul>
+<li><strong>ipconfig &#x2F;flushdns</strong></li>
+</ul>
+<p>Reperform Git operations to see if it can connect to GitHub normally.</p>
+<hr>
+<h3 id="③-Cannot-be-displayed-on-the-web-page-after-inserting-an-image-in-the-hexo-blog"><a href="#③-Cannot-be-displayed-on-the-web-page-after-inserting-an-image-in-the-hexo-blog" class="headerlink" title="③ Cannot be displayed on the web page after inserting an image in the hexo blog"></a>③ Cannot be displayed on the web page after inserting an image in the hexo blog</h3><h4 id="1-Modify-the-configuration-file"><a href="#1-Modify-the-configuration-file" class="headerlink" title="1. Modify the configuration file"></a>1. Modify the configuration file</h4><p>Set the <strong>post_asset_folder</strong> option in the <strong>_config.yml</strong> file to <strong>true</strong> to enable it.</p>
+<p>Afterwards, when you run <strong>“hexo n ‘test’”</strong> in your command line, a ‘test’ folder will be created in the same directory as your md files. You only need to place your images in the ‘test’ folder. Then, you can reference them using relative paths (If you don’t mind the trouble, you can also create folders manually every time, make sure they have the same name!).</p>
+<h4 id="2-Download-a-plugin"><a href="#2-Download-a-plugin" class="headerlink" title="2. Download a plugin"></a>2. Download a plugin</h4><p>Run Git Bash as an administrator in the blog directory, and execute the download command: </p>
+<ul>
+<li><strong>npm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save</strong></li>
+</ul>
+<p>And you can display images normally!</p>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2024/11/30/test/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  test
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
+
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+
+	
+	    <a href="/">DrunkDream</a>
+	
+	
+	
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
