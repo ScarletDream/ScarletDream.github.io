@@ -166,15 +166,15 @@
 <h4 id="2-Run-your-Git-terminal"><a href="#2-Run-your-Git-terminal" class="headerlink" title="2. Run your Git terminal"></a>2. Run your Git terminal</h4><p>Use Git Bash Here to open the terminal anywhere.</p>
 <h4 id="3-Check-your-Git-version"><a href="#3-Check-your-Git-version" class="headerlink" title="3. Check your Git version"></a>3. Check your Git version</h4><p>Enter check command: </p>
 <ul>
-<li><strong>git –version</strong></li>
+<li><strong><code>git --version</code></strong></li>
 </ul>
 <p>something similar to the following appears to indicate success:</p>
 <p><img src="/2024/11/29/The_first_step/gitVersion.png" alt="Git version"></p>
 <h3 id="②-Install-nodejs"><a href="#②-Install-nodejs" class="headerlink" title="② Install nodejs"></a>② Install nodejs</h3><h4 id="1-Visit-the-official-website-1"><a href="#1-Visit-the-official-website-1" class="headerlink" title="1. Visit the official website"></a>1. Visit the official website</h4><p>Enter the official website: <a target="_blank" rel="noopener" href="https://www.nodejs.com.cn/download.html">https://www.nodejs.com.cn/download.html</a> (Or the fastest website in your area), download according to your needs.</p>
 <h4 id="2-Check-your-installation"><a href="#2-Check-your-installation" class="headerlink" title="2. Check your installation"></a>2. Check your installation</h4><p>Enter the following command to check if the installation was successful:</p>
 <ul>
-<li><strong>node -v</strong></li>
-<li><strong>npm -v</strong></li>
+<li><strong><code>node -v</code></strong></li>
+<li><strong><code>npm -v</code></strong></li>
 </ul>
 <p>Just like:</p>
 <p><img src="/2024/11/29/The_first_step/nodeVersion.png" alt="Node version"></p>
@@ -183,20 +183,20 @@
 
 <h4 id="4-Configure-these-two-folders"><a href="#4-Configure-these-two-folders" class="headerlink" title="4. Configure these two folders"></a>4. Configure these two folders</h4><p>Use administrator privileges to open the cmd window, then input the following command:</p>
 <ul>
-<li><strong>npm config set prefix “your_nodejs_diretory\node_global”</strong></li>
-<li><strong>npm config set cache “your_nodejs_diretory\node_cache”</strong></li>
+<li><strong><code>npm config set prefix &quot;your_nodejs_diretory\node_global&quot;</code></strong></li>
+<li><strong><code>npm config set cache &quot;your_nodejs_diretory\node_cache&quot;</code></strong></li>
 </ul>
 <h4 id="5-Configure-environment-variables"><a href="#5-Configure-environment-variables" class="headerlink" title="5. Configure environment variables"></a>5. Configure environment variables</h4><p>The process is rather simple but too lengthy, please search it yourself XD.</p>
 <h3 id="③-Install-Hexo"><a href="#③-Install-Hexo" class="headerlink" title="③ Install Hexo"></a>③ Install Hexo</h3><p>Just a few simple steps are required:</p>
 <h4 id="1-Execute-the-installation-in-the-terminal"><a href="#1-Execute-the-installation-in-the-terminal" class="headerlink" title="1. Execute the installation in the terminal"></a>1. Execute the installation in the terminal</h4><p>Enter install command and check：</p>
 <ul>
-<li><strong>npm install hexo -g</strong></li>
-<li><strong>hexo -v</strong></li>
+<li><strong><code>npm install hexo -g</code></strong></li>
+<li><strong><code>hexo -v</code></strong></li>
 </ul>
 <p>And you know what you should see.</p>
 <h4 id="2-Installation-Hexo-dependency"><a href="#2-Installation-Hexo-dependency" class="headerlink" title="2. Installation Hexo dependency"></a>2. Installation Hexo dependency</h4><p>Enter the command:</p>
 <ul>
-<li><strong>npm install hexo-deployer-git –save</strong></li>
+<li><strong><code>npm install hexo-deployer-git --save</code></strong></li>
 </ul>
 <p><em><strong>Pay special attention to the fact that this command needs to be executed in the folder where you write your blog! Otherwise, an error may occur when you upload your blog:</strong></em></p>
 <ul>
@@ -205,16 +205,16 @@
 <h2 id="Ⅱ-Configure-Your-GitHub-SSH-Key"><a href="#Ⅱ-Configure-Your-GitHub-SSH-Key" class="headerlink" title="Ⅱ Configure Your GitHub SSH Key"></a>Ⅱ Configure Your GitHub SSH Key</h2><p>You should have a github account to synchronize your blog (easy to publish), and the purpose of this step is: you can upload local source code and resources to github confidentially, without having to enter your account number and password every time.</p>
 <h4 id="1-Enter-the-ssh-directory"><a href="#1-Enter-the-ssh-directory" class="headerlink" title="1. Enter the .ssh directory"></a>1. Enter the .ssh directory</h4><p>Execute the cd command to Enter your local SSH folder:</p>
 <ul>
-<li><strong>cd ~&#x2F;.ssh</strong></li>
+<li><strong><code>cd ~/.ssh</code></strong></li>
 </ul>
 <h4 id="2-Generate-SSH-Key"><a href="#2-Generate-SSH-Key" class="headerlink" title="2. Generate SSH Key"></a>2. Generate SSH Key</h4><p>Generate SSH Key base on you email address (The one that binds to github):</p>
 <ul>
-<li><strong>ssh-keygen -t rsa -C “your_email_address”</strong></li>
+<li><strong><code>ssh-keygen -t rsa -C &quot;your_email_address&quot;</code></strong></li>
 </ul>
 <p>Wait for a moment, then press the enter key three times consecutively.</p>
 <p>Then, a key id_rsa.pub will appear in your .ssh directory. Execute a command in the .ssh folder:</p>
 <ul>
-<li><strong>clip &lt; id_rsa.pub</strong></li>
+<li><strong><code>clip &lt; id_rsa.pub</code></strong></li>
 </ul>
 <p>to copy the key content. (Opening the text editor and then copying might cause issues!)</p>
 <h4 id="3-Link-Start"><a href="#3-Link-Start" class="headerlink" title="3. Link Start!"></a>3. Link Start!</h4><p>Open the GitHub homepage, click on personal settings.</p>
@@ -235,34 +235,34 @@
 
 <p>Enter the command to test the connection:</p>
 <ul>
-<li><strong>ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a></strong></li>
+<li><strong><code>ssh -T git@github.com</code></strong></li>
 </ul>
 <p>If the following prompt appears:</p>
 <p><img src="/2024/11/29/The_first_step/checkLink.png" alt="checkLink"></p>
 <p>then you have succeeded!</p>
 <p>Final step, configure your account and password.</p>
 <ul>
-<li><strong>git config –global user.name “your_github_usrname”</strong></li>
-<li><strong>git config –global user.email “your_github-binding_email_address”</strong></li>
+<li><strong><code>git config --global user.name &quot;your_github_usrname&quot;</code></strong></li>
+<li><strong><code>git config --global user.email &quot;your_github-binding_email_address&quot;</code></strong></li>
 </ul>
 <h2 id="Ⅲ-Build-Your-Personal-Blog"><a href="#Ⅲ-Build-Your-Personal-Blog" class="headerlink" title="Ⅲ Build Your Personal Blog"></a>Ⅲ Build Your Personal Blog</h2><p>We have finally gotten through those tedious preparation stages (if you managed to stick it out)! Now, please create an empty folder named ‘blog’, Then execute the blog initialization command under this folder:</p>
 <ul>
-<li><strong>hexo init</strong></li>
+<li><strong><code>hexo init</code></strong></li>
 </ul>
 <p>And you’ll see sth like this (Perhaps a few less documents than mine):</p>
 <p>![blogInit](.&#x2F;The_first_step&#x2F;blogInit.png &#x3D;700x)</p>
 <p>Now create your first blog!</p>
 <ul>
-<li><strong>hexo n ‘my_first_blog’</strong></li>
+<li><strong><code>hexo n &#39;my_first_blog&#39;</code></strong></li>
 </ul>
 <p>And you will find <strong>my_first_blog.md</strong> in <strong>\source_posts</strong>, just edit it as you like!</p>
 <p>Then generate html document (This command will generate web page from all md files in your source folder):</p>
 <ul>
-<li><strong>hexo -g</strong></li>
+<li><strong><code>hexo -g</code></strong></li>
 </ul>
 <p>Then start the server:</p>
 <ul>
-<li><strong>hexo -s</strong></li>
+<li><strong><code>hexo -s</code></strong></li>
 </ul>
 <p>And you will have a webpage running on your local network! Click in! It might look like:</p>
 <img src="/2024/11/29/The_first_step/myWeb.png" width="80%">
@@ -278,7 +278,7 @@
 
 <p>Finally, by executing the command:</p>
 <ul>
-<li><strong>hexo d</strong></li>
+<li><strong><code>hexo d</code></strong></li>
 </ul>
 <p>you can synchronize your blog with GitHub!</p>
 <p><strong>We finally succeeded in making it!</strong></p>
@@ -287,19 +287,19 @@
 <p><img src="/2024/11/29/The_first_step/regedit.png" alt="regedit picture"></p>
 <p>Then, set it in the Registry editor interface:</p>
 <ul>
-<li><strong>HKEY_CLASSES_ROOT\Directory\Background\shell</strong></li>
+<li><strong><code>HKEY_CLASSES_ROOT\Directory\Background\shell</code></strong></li>
 </ul>
 <p>And create a new shell folder if there is no shell folder in the Background directory.</p>
 <p>The key points are as follows:</p>
 <p>First, create a new item ‘Git Bush Here’ in the shell directory. At this time, click the right mouse button and the ‘Git Bush Here’ option will appear in the menu.</p>
 <p>Then, create a new command entry under Git Bush Here, and then modify the default value of the command entry to:</p>
 <ul>
-<li><strong>your_git_directory\bash.exe –login -i</strong></li>
+<li><strong><code>your_git_directory\bash.exe --login -i</code></strong></li>
 </ul>
 <p>Get it done. At this time, you can use the Git Bash Here shortcut with confidence.</p>
 <p>Extraly, we can add an icon to the shortcut. Create a new string value Icon under Git Bush Here and edit the Icon value:</p>
 <ul>
-<li><strong>your_git_directory\mingw64\share\git\git-for-windows.ico</strong></li>
+<li><strong><code>your_git_directory\mingw64\share\git\git-for-windows.ico</code></strong></li>
 </ul>
 <hr>
 <h3 id="②-GitHub-connection-failed-Failed-to-connect-to-github-com-port-443-after-xxx-ms-Couldn’t-connect-to-server"><a href="#②-GitHub-connection-failed-Failed-to-connect-to-github-com-port-443-after-xxx-ms-Couldn’t-connect-to-server" class="headerlink" title="② GitHub connection failed: Failed to connect to github.com port 443 after xxx ms: Couldn’t connect to server"></a>② GitHub connection failed: Failed to connect to github.com port 443 after xxx ms: Couldn’t connect to server</h3><p>When you are in a VPN environment, a GitHub connection failure is often due to inconsistent configurations between the proxy server and Git. This manifests as Git failing to access GitHub through the proxy, or the incorrect proxy port. Here are the steps to address this issue:</p>
@@ -307,18 +307,18 @@
 <p>Open Settings &gt; Network &amp; Internet &gt; Proxy, find the proxy settings, and record the current proxy port. Assume the port number is xxx.</p>
 <h4 id="2-Configure-Git-proxy"><a href="#2-Configure-Git-proxy" class="headerlink" title="2. Configure Git proxy"></a>2. Configure Git proxy</h4><p>Ensure that Git uses the same port as the system proxy settings. This can be configured with the following command:</p>
 <ul>
-<li><strong>git config –global http.proxy <a href="http://127.0.0.1:xxx">http://127.0.0.1:xxx</a></strong></li>
-<li><strong>git config –global http.proxy <a href="https://127.0.0.1:xxx">https://127.0.0.1:xxx</a></strong></li>
+<li><strong><code>git config --global http.proxy http://127.0.0.1:xxx</code></strong></li>
+<li><strong><code>git config --global http.proxy https://127.0.0.1:xxx</code></strong></li>
 </ul>
 <p>Thus, Git will access GitHub through this proxy (including HTTP and HTTPS protocols).</p>
 <h4 id="3-Verify-if-the-proxy-settings-have-taken-effect"><a href="#3-Verify-if-the-proxy-settings-have-taken-effect" class="headerlink" title="3. Verify if the proxy settings have taken effect"></a>3. Verify if the proxy settings have taken effect</h4><p>After configuration, you can use the following command to verify if the proxy settings are correct:</p>
 <ul>
-<li><strong>git config –global -l</strong></li>
+<li><strong><code>git config --global -l</code></strong></li>
 </ul>
 <p>This will list the current Git configuration information, ensuring that the http.proxy and https.proxy settings within it are set to the port you just configured.</p>
 <h4 id="4-Refresh-the-DNS-cache"><a href="#4-Refresh-the-DNS-cache" class="headerlink" title="4.  Refresh the DNS cache"></a>4.  Refresh the DNS cache</h4><p>Sometimes DNS caching can lead to connection issues. It is recommended to flush the system’s DNS cache before performing Git operations:</p>
 <ul>
-<li><strong>ipconfig &#x2F;flushdns</strong></li>
+<li><strong><code>ipconfig /flushdns</code></strong></li>
 </ul>
 <p>Reperform Git operations to see if it can connect to GitHub normally.</p>
 <hr>
@@ -326,7 +326,7 @@
 <p>Afterwards, when you run <strong>“hexo n ‘test’”</strong> in your command line, a ‘test’ folder will be created in the same directory as your md files. You only need to place your images in the ‘test’ folder. Then, you can reference them using relative paths (If you don’t mind the trouble, you can also create folders manually every time, make sure they have the same name!).</p>
 <h4 id="2-Download-a-plugin"><a href="#2-Download-a-plugin" class="headerlink" title="2. Download a plugin"></a>2. Download a plugin</h4><p>Run Git Bash as an administrator in the blog directory, and execute the download command: </p>
 <ul>
-<li><strong>npm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save</strong></li>
+<li><strong><code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code></strong></li>
 </ul>
 <p>And you can display images normally!</p>
 
